@@ -14,6 +14,8 @@
 		032FED672459EAE2001E4905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032FED652459EAE2001E4905 /* LaunchScreen.storyboard */; };
 		D014A7BD2459F1B000057D23 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014A7BC2459F1B000057D23 /* UIColorExtensions.swift */; };
 		D014A7C02459F36F00057D23 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014A7BF2459F36F00057D23 /* ReusableView.swift */; };
+		D014A7C22459F43700057D23 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D014A7C12459F43700057D23 /* Cartfile */; };
+		D014A7C42459F44600057D23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D014A7C32459F44600057D23 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		032FED682459EAE2001E4905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D014A7BC2459F1B000057D23 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D014A7BF2459F36F00057D23 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		D014A7C12459F43700057D23 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		D014A7C32459F44600057D23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		032FED4E2459EADF001E4905 = {
 			isa = PBXGroup;
 			children = (
+				D014A7C32459F44600057D23 /* README.md */,
+				D014A7C12459F43700057D23 /* Cartfile */,
 				032FED592459EADF001E4905 /* stop_smoking */,
 				032FED582459EADF001E4905 /* Products */,
 			);
@@ -133,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 032FED812459EAE3001E4905 /* Build configuration list for PBXNativeTarget "stop_smoking" */;
 			buildPhases = (
+				D014A7C52459F4BF00057D23 /* Carthage Script */,
 				032FED532459EADF001E4905 /* Sources */,
 				032FED542459EADF001E4905 /* Frameworks */,
 				032FED552459EADF001E4905 /* Resources */,
@@ -184,12 +191,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D014A7C22459F43700057D23 /* Cartfile in Resources */,
 				032FED672459EAE2001E4905 /* LaunchScreen.storyboard in Resources */,
+				D014A7C42459F44600057D23 /* README.md in Resources */,
 				032FED642459EAE2001E4905 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D014A7C52459F4BF00057D23 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			name = "Carthage Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		032FED532459EADF001E4905 /* Sources */ = {
