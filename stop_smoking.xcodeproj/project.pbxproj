@@ -12,6 +12,8 @@
 		032FED5F2459EADF001E4905 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032FED5E2459EADF001E4905 /* ViewController.swift */; };
 		032FED642459EAE2001E4905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032FED632459EAE2001E4905 /* Assets.xcassets */; };
 		032FED672459EAE2001E4905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032FED652459EAE2001E4905 /* LaunchScreen.storyboard */; };
+		D014A7BD2459F1B000057D23 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014A7BC2459F1B000057D23 /* UIColorExtensions.swift */; };
+		D014A7C02459F36F00057D23 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014A7BF2459F36F00057D23 /* ReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		032FED632459EAE2001E4905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032FED662459EAE2001E4905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032FED682459EAE2001E4905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D014A7BC2459F1B000057D23 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D014A7BF2459F36F00057D23 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		032FED592459EADF001E4905 /* stop_smoking */ = {
 			isa = PBXGroup;
 			children = (
+				D014A7BA2459F18A00057D23 /* Additions */,
 				032FED8C2459EC71001E4905 /* Screens */,
 				032FED8A2459EBA5001E4905 /* Application */,
 			);
@@ -94,6 +99,31 @@
 				032FED5E2459EADF001E4905 /* ViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		D014A7BA2459F18A00057D23 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				D014A7BE2459F36100057D23 /* Protocols */,
+				D014A7BB2459F19000057D23 /* Extensions */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		D014A7BB2459F19000057D23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D014A7BC2459F1B000057D23 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D014A7BE2459F36100057D23 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D014A7BF2459F36F00057D23 /* ReusableView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				032FED5F2459EADF001E4905 /* ViewController.swift in Sources */,
+				D014A7C02459F36F00057D23 /* ReusableView.swift in Sources */,
 				032FED5B2459EADF001E4905 /* AppDelegate.swift in Sources */,
 				032FED5D2459EADF001E4905 /* SceneDelegate.swift in Sources */,
+				D014A7BD2459F1B000057D23 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
